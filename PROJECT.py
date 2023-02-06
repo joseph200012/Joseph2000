@@ -162,11 +162,6 @@ df3.write.format("delta").saveAsTable("source_sales")
 
 # COMMAND ----------
 
-# MAGIC %sql
-# MAGIC select count(year) from source_sales
-
-# COMMAND ----------
-
 # DBTITLE 1,Group by  row count
 # MAGIC %sql
 # MAGIC select count(*) from source_sales
